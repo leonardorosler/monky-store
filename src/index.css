@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #FAFAF7;
+    color: #1A1A1A;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-charcoal text-ivory px-6 py-2.5 text-sm font-body font-medium tracking-wide hover:bg-accent transition-colors duration-200;
+  }
+
+  .btn-outline {
+    @apply border border-charcoal text-charcoal px-6 py-2.5 text-sm font-body font-medium tracking-wide hover:bg-charcoal hover:text-ivory transition-colors duration-200;
+  }
+
+  .btn-ghost {
+    @apply text-charcoal text-sm font-body font-medium hover:text-accent transition-colors duration-200;
+  }
+
+  .input-field {
+    @apply w-full border border-border bg-white px-4 py-2.5 text-sm font-body text-charcoal placeholder-muted focus:outline-none focus:border-charcoal transition-colors duration-200;
+  }
+
+  .tag {
+    @apply inline-block px-3 py-1 text-xs font-body font-medium tracking-wider uppercase;
+  }
+}
+
+/* Scrollbar sutil */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F0F0EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8C8C0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B5883A;
+}
